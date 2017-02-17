@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+</style>
+	<title>Jquery Exercise</title>
+</head>
+<h1>Jquery Exercise</h1>
+<body>
+<p id='Everything'>Everything</p>
+<p class='holder'>Amazeballs</p>
+<p class='holder'>mark my words</p>
+<p>usually I like to go on vacation to these places:</p>
+<ul>
+	<li id='secret'>France</li>
+	<li>Tahiti</li>
+	<li id=changeme>Iceland</li>
+</ul>	
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>$('body').css('background-color', 'red');
+	$('img').attr('src','http://1.imgur.com/nWGCwiE.gif');
+	$('h1').text('hello');
+	$('#notification').html('<div class="alert">Hold on! <b>an error</b> has occured!</p>');
+	$('.container').append("<p>What's the difference between <i>.append()</i> and .html()?</p>");
+	$("p#Everything").css("fontSize","100px").css('color','green');
+	$('h1').css('color','blue');
+	$('p.holder').css({'border-color':"black",
+		"border-width":"1px",
+		"border-style":"solid"})
+	$('li').css('font-weight','bold')
+	$('li#secret').css('display','block')
+	$('li#changeme').append('How about instead of Iceland, we go to Madagascar')
+	</script>
+</body>
+</html>
